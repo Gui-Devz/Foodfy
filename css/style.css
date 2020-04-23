@@ -1,6 +1,7 @@
 @import "https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap";
 
 
+html,
 body{
     background-color: rgb(255, 255, 255);
 
@@ -211,24 +212,24 @@ footer div p{
 /*=== Recipes MODAL ====*/
 
 .modal-overlay{
-    visibility: hidden;
-    display: none;
-}
-
-.modal-overlay.active{
-    background-color: rgba(0, 0, 0, 0.5);
-
     position: absolute;
 
     top: 0;
-    bottom: 0;
+    left: 0;
+    bottom: 100%;
 
     width: 100%;
-    height: auto;
+    height: 100%;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    visibility: hidden;
+}
+
+.modal-overlay.active{
+    background-color: rgba(0, 0, 0, 0.5);
 
     visibility: visible;
 }
