@@ -138,7 +138,7 @@ body .all{
 }
 
 .card img{
-    max-width: 300px;
+    width: 300px;
 
     border-radius: 15px;
 
@@ -208,7 +208,58 @@ footer div p{
     color: rgb(68, 68, 68);
 }
 
-/*=== Recipes page ====*/
+/*=== Recipes MODAL ====*/
 
+.modal-overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-overlay .modal-content{
+    width: 660px;
+    height: auto;
+
+    padding: 20px;
+    border-radius: 16px;
+
+    box-sizing: border-box;
+
+    background-color: white;
+
+    text-align: center;
+}
+
+.modal-overlay .modal-content .card img{
+    width: 600px;
+    height: 200px;
+
+    margin-left: 10px;
+}
+
+.modal-content h2{
+    width: 660px;
+}
+
+.modal-content p{
+    width: 660px;
+}
+
+.modal-content .close{
+    margin-top: 60px;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;
+}
 
 
