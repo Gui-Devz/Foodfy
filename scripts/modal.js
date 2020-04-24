@@ -58,18 +58,13 @@ for (const card of cards) {
 
             if(recipe.id === address){
                 const title = document.createTextNode(recipe.title)
-                console.log(title)
                 h2.appendChild(title)
                 
                 const p = document.createElement('p')
                 const author = document.createTextNode(recipe.author)
 
                 p.appendChild(author)
-
                 document.querySelector('.modal-content .author').appendChild(p)
-                console.log(author)
-               
-                
             }
         }
     })
